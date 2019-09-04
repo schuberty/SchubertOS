@@ -4,15 +4,15 @@ shopt -s extglob
 
 # VARIÁVEIS
 
-_git="https://github.com/schubertyi"
-_repo="Scripts/raw/master"
+_git="https://github.com/schuberty"
+_repo="SchubertOS/raw/master/pos-install"
 
 et_mod=enp3s0
 
 _DE="vim xorg-server xf86-input-mouse xf86-input-keyboard xf86-video-vesa xorg-xinit i3-wm i3status i3lock dmenu awesome-terminal-fonts terminus-font ttf-dejavu xterm git lightdm lightdm-gtk-greeter firefox firefox-il8n-pt-br bash-completion"
 opt_fonts="noto-fonts ttf-ubuntu-font-family ttf-liberation ttf-droid ttf-inconsolata ttf-roboto ttf-font-awesome"
 opt_ranger="ranger atool highlight elinks mediainfo w3m ffmpegthumbnailer mupdf"
-opt_tools="reflector vim calcurse p7zip unzip docker git wget go vlc urxvt-font-size-git python-pdftotext"
+opt_tools="reflector vim calcurse p7zip unzip docker git wget go vlc urxvt-font-size-git"
 opt_audio="alsa-utils alsa-plugins alsa-lib pavucontrol"
 
 # FUNÇÕES
