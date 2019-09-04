@@ -15,6 +15,7 @@ opt_ranger="ranger atool highlight elinks mediainfo w3m ffmpegthumbnailer mupdf"
 opt_tools="reflector vim calcurse p7zip unzip docker git wget go vlc urxvt-font-size-git"
 opt_audio="alsa-utils alsa-plugins alsa-lib pavucontrol"
 bases="compton albert libreoffice"
+dev="jdk-openjdk maven"
 
 # FUNÇÕES
 
@@ -66,7 +67,10 @@ set_basic(){
     fi
 
     yay -Syu
-    yay -S $opt_fonts $opt_ranger $opt_tools $opt_audio $bases --noconfirm --needed
+    yay -S $opt_fonts $opt_ranger $opt_tools $opt_audio $bases $dev --noconfirm --needed
+
+    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+    sudo python get-pip.py
 }
 
 # FUNÇÔES DIALOG
