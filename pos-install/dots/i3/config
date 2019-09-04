@@ -99,7 +99,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 # -- Apps
 #  WIN+Enter     = Start a terminal
-bindsym $mod+Return exec i3-sensible-terminal 
+bindsym $mod+Return exec uxterm 
 #  WIN+Shift+q   = Kill focused container
 bindsym $mod+Shift+q kill
 #  WIN+Shift+p   = Refresh i3 without layout
