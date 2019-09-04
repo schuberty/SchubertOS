@@ -7,9 +7,9 @@ shopt -s extglob
 _git="https://github.com/schuberty"
 _repo="SchubertOS/raw/master/pos-install"
 
-et_mod=enp3s0
+et_mod="enp3s0"
 
-_DE="vim xorg-server xf86-input-mouse xf86-input-keyboard xf86-video-vesa xorg-xinit i3-wm i3status i3lock dmenu awesome-terminal-fonts terminus-font ttf-dejavu xterm git lightdm lightdm-gtk-greeter firefox firefox-il8n-pt-br bash-completion"
+DE="vim wget xorg-server xf86-input-mouse xf86-input-keyboard xf86-video-vesa xorg-xinit i3-wm i3status i3lock dmenu awesome-terminal-fonts terminus-font ttf-dejavu xterm git lightdm lightdm-gtk-greeter firefox firefox-i18n-pt-br bash-completion"
 opt_fonts="noto-fonts ttf-ubuntu-font-family ttf-liberation ttf-droid ttf-inconsolata ttf-roboto ttf-font-awesome"
 opt_ranger="ranger atool highlight elinks mediainfo w3m ffmpegthumbnailer mupdf"
 opt_tools="reflector vim calcurse p7zip unzip docker git wget go vlc urxvt-font-size-git"
@@ -21,14 +21,11 @@ dev="jdk-openjdk maven"
 
 
 set_de(){
-    sudo systemctl enable dhcpcd@$et_mod
-    sudo systemctl start dhcpcd@$et_mod
-
-    pacman -S $_DE --noconfirm --needed
+    pacman -S $DE --noconfirm --needed
     
     sudo systemctl enable lightdm
     sed -i 's/^#greeter-session.*/greeter-session=lightdm-gtk-greeter/' /etc/lightdm/lightdm.conf
-    sed- i '/^#greeter-hider-user=/s/#//' /etc/lightdm/lightdm.conf
+    sed -i '/^#greeter-hider-user=/s/#//' /etc/lightdm/lightdm.conf
     wget "$_git/$_repo/back.jpg" -O /usr/share/pixmaps/back.jpg 2>/dev/null
     wget "$_git/$_repo/key" -O /etc/X11/xorg.conf.d/10-evdev.conf 2>/dev/null
     echo -e "[greeter]\nbackground=/usr/share/pixmaps/back.jpg" > /etc/lightdm/lightdm-gtk-greeter.conf
@@ -50,6 +47,9 @@ set_sudouser(){
 }
 
 set_mirror(){
+    sudo systemctl enable dhcpcd@$et_mod
+    sudo systemctl start dhcpcd@$et_mod
+
     sudo pacman -S reflector --noconfirm --needed
     sudo reflector --verbose --country Brazil --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
 }
