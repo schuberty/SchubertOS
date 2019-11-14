@@ -23,16 +23,18 @@ exec --no-startup-id nm-applet
 #  I don't know what ya doing here bro
 floating_modifier $mod
 # -- Downladed packages
-#  Load albert
-exec_always albert
 #  Loggin with numlock
 exec_always numlockx on
 #  Load compton
 exec_always compton
 #  Config for compton
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 0
 #  Loggin with audio at 100%
 exec amixer set Master 100%
+#  Remove ~/Desktop folder
+exec_always rm -rf ~/Desktop
+#  Automount
+# exec_always udiskie
 
 # Bindkeys
 # -- Container managment
@@ -49,7 +51,7 @@ bindsym $mod+Shift+Right move right
 #  Fulscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 #  Horizontal orientation
-bindsym $mod+h slipt h
+bindsym $mod+c split h
 #  Vertical orientation
 bindsym $mod+v split v
 #  Stacked layout
@@ -112,4 +114,6 @@ bindsym $mod+KP_Add exec amixer set Master 10%+
 bindsym $mod+KP_Subtract exec amixer set Master 10%-
 #  AudioMute Key = Toggle audio ON/OFF
 bindsym XF86AudioMute exec amixer set Master toggle
+#  Sinapse
+bindsym $mod+d exec synapse
 
