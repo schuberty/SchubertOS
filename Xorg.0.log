@@ -1,0 +1,31 @@
+[    13.890] 
+X.Org X Server 1.20.7
+X Protocol Version 11, Revision 0
+[    13.890] Build Operating System: Linux Arch Linux
+[    13.890] Current Operating System: Linux notWindows 5.5.3-arch1-1 #1 SMP PREEMPT Tue, 11 Feb 2020 15:35:41 +0000 x86_64
+[    13.890] Kernel command line: BOOT_IMAGE=/vmlinuz-linux root=UUID=8f835229-1319-46a8-acdd-2bcf8a046cee rw loglevel=3 quiet
+[    13.890] Build Date: 14 January 2020  07:13:52AM
+[    13.890]  
+[    13.890] Current version of pixman: 0.38.4
+[    13.890] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    13.890] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    13.890] (==) Log file: "/var/log/Xorg.0.log", Time: Fri Feb 14 13:53:06 2020
+[    13.891] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[    13.891] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    13.891] Parse error on line 12 of section Monitor in file /etc/X11/xorg.conf.d/10-evdev.conf
+	This section must have an Identifier line.
+[    13.891] (EE) Problem parsing the config file
+[    13.891] (EE) Error parsing the config file
+[    13.891] (EE) 
+Fatal server error:
+[    13.891] (EE) no screens found(EE) 
+[    13.891] (EE) 
+Please consult the The X.Org Foundation support 
+	 at http://wiki.x.org
+ for help. 
+[    13.891] (EE) Please also check the log file at "/var/log/Xorg.0.log" for additional information.
+[    13.891] (EE) 
+[    13.891] (EE) Server terminated with error (1). Closing log file.
