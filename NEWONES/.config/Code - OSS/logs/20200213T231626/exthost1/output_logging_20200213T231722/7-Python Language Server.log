@@ -1,0 +1,12 @@
+[Info  - 23:17:23] Analysis cache path: /home/schubert/.cache/Microsoft/Python Language Server
+[Info  - 23:17:23] Microsoft Python Language Server version 0.5.30.0
+[Info  - 23:17:23] Workspace root: /home/schubert/.config/i3blocks/scripts
+[Info  - 23:17:23] GetCurrentSearchPaths /usr/bin/python 
+[Info  - 23:17:23] Interpreter search paths:
+[Info  - 23:17:23]     /usr/lib/python3.8
+[Info  - 23:17:23]     /usr/lib/python3.8/lib-dynload
+[Info  - 23:17:23]     /home/schubert/.local/lib/python3.8/site-packages
+[Info  - 23:17:23]     /usr/lib/python3.8/site-packages
+[Info  - 23:17:23] User search paths:
+[Info  - 23:17:24] Initializing for /usr/bin/python
+[Info  - 23:17:24] Analysis caching mode: None.

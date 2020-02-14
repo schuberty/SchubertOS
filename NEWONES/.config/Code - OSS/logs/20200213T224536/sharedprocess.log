@@ -1,0 +1,22 @@
+[2020-02-13 22:45:40.241] [sharedprocess] [info] main {"machineId":"1a63770a24099f882e53c019691ba3f2f9c41019c2d0394fa14ff90491bdb867","windowId":2}
+[2020-02-13 22:45:40.328] [sharedprocess] [info] vscode-icons-team.vscode-icons 9.7.0 Running post uninstall script
+[2020-02-13 22:45:40.450] [sharedprocess] [error] vscode-icons-team.vscode-icons 9.7.0 post-uninstall internal/modules/cjs/loader.js:630
+    throw err;
+    ^
+
+Error: Cannot find module '/home/schubert/.vscode-oss/extensions/vscode-icons-team.vscode-icons-9.7.0/out/src/uninstall.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:627:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:27)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:850:10)
+    at internal/main/run_main_module.js:17:11 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+[2020-02-13 22:45:40.455] [sharedprocess] [error] vscode-icons-team.vscode-icons 9.7.0 Failed to run post uninstall script: post-uninstall process exited with code 1
+[2020-02-13 22:45:40.540] [sharedprocess] [info] Deleted from disk arcticicestudio.nord-visual-studio-code /home/schubert/.vscode-oss/extensions/arcticicestudio.nord-visual-studio-code-0.13.0
+[2020-02-13 22:45:40.540] [sharedprocess] [info] Deleted from disk liviuschera.noctis /home/schubert/.vscode-oss/extensions/liviuschera.noctis-10.26.0
+[2020-02-13 22:45:40.543] [sharedprocess] [info] Deleted from disk ahmadawais.shades-of-purple /home/schubert/.vscode-oss/extensions/ahmadawais.shades-of-purple-6.3.0
+[2020-02-13 22:45:40.543] [sharedprocess] [info] Deleted from disk sdras.night-owl /home/schubert/.vscode-oss/extensions/sdras.night-owl-1.1.3
+[2020-02-13 22:45:40.543] [sharedprocess] [info] Deleted from disk vscode-icons-team.vscode-icons /home/schubert/.vscode-oss/extensions/vscode-icons-team.vscode-icons-9.7.0
+[2020-02-13 22:46:20.254] [sharedprocess] [info] Starting to clean up unused language packs.

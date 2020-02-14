@@ -1,0 +1,10 @@
+file:///home/schubert/.config/i3blocks/scripts/capsLockState.py {"mtime":1581637373142,"ctime":1581635809146,"size":293,"etag":"34k031jdf9e","orphaned":false}
+from os import system
+import subprocess
+
+def main():
+    output = subprocess.Popen(['xset', '-q'],stdout=subprocess.PIPE)
+    stdout = ''.join(output.communicate())
+
+if __name__ == "__main__":
+    main()
