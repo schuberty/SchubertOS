@@ -47,7 +47,7 @@ EOF
 
 case "$1" in
 	"--mirror"|"-m") setMirror ;;
-	"--desktop"|"-de") deskEnv ;;
+	"--desktop"|"-de") setDeskEnv ;;
 	*) echo "Invalid option." && usageHelp ;;
 esac
 
