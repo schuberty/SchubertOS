@@ -1,3 +1,0 @@
-[timing]
-command=date +'%d/%b = %j/366 | %H:%M | %ss '
-interval=1
