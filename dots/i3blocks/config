@@ -1,0 +1,16 @@
+[battery]
+command=sh /home/schubert/.config/i3blocks/scripts/battery.sh
+interval=1
+
+[numlock]
+command=sh /home/schubert/.config/i3blocks/scripts/numlock.sh
+interval=once
+signal=10
+
+[date]
+command=date +'%a,%d/%b'
+interval=1800
+
+[timing]
+command=date +'%H:%M:%S '
+interval=1
