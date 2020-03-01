@@ -1,8 +1,8 @@
 # All deprecated dots
-.deprecatedPosInstall/*
+.deprecatedPosInstall/**/**
 
 # Dots files
-dots/*
+dots/**/**
 
 # Images
-backgroundImages/*
+backgroundImages/**/**
